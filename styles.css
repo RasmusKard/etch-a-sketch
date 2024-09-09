@@ -1,0 +1,37 @@
+#grid-container {
+    display: flex;
+    aspect-ratio: 1 / 1;
+    padding: 50px;
+}
+
+.grid-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.grid-column > * {
+    flex-basis: 100%;
+}
+
+
+
+@keyframes hover-color {
+    0% {
+
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+
+
+.grid-element {
+    animation: hover-color 1.0s forwards;
+    animation-play-state: paused;
+}
+
+.grid-element:hover {
+    animation-play-state: running;
+}
