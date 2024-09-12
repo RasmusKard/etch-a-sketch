@@ -1,7 +1,23 @@
+:root {
+    --animation-color: rgb(80, 60, 255);
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    background-color: ;
+    border: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
 #grid-container {
     display: flex;
     aspect-ratio: 1 / 1;
-    padding: 50px;
+    border: double black;
 }
 
 .grid-column {
@@ -20,12 +36,12 @@
     0% {}
 
     100% {
-        background-color: blue;
+        background-color: var(--animation-color);
     }
 }
 
 .grid-element {
-    animation: hover-color 0.3s forwards;
+    animation: hover-color 0.2s forwards;
     animation-play-state: paused;
 }
 
