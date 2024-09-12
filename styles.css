@@ -10,28 +10,25 @@
     flex-basis: 100%;
 }
 
-.grid-column > * {
+.grid-column>* {
     flex-basis: 100%;
 }
 
 
 
 @keyframes hover-color {
-    0% {
+    0% {}
 
-    }
     100% {
         background-color: blue;
     }
 }
 
-
-
 .grid-element {
-    animation: hover-color 1.0s forwards;
+    animation: hover-color 0.3s forwards;
     animation-play-state: paused;
 }
 
-.grid-element:hover {
+.grid-element.shift-held:hover {
     animation-play-state: running;
 }
